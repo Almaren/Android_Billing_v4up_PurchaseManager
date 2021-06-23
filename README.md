@@ -32,7 +32,8 @@ Android Billing v4+ implementation for non consumable products. Written in **Kot
 
 ## How to use:
 **All methods of PurchaseManager must be called from the main ui thread.**
-1. Call init(activity: Activity, listener: PurchaseListener) from Activity.onCreate(..). Via PurchaseListener you will receive available products to purchase, a purchased items, a result from the recent purchase.
-2. Call onResume() from Activity.onResume()
-3. Call dispose() from Activity.onDestroy()
-4. IAP methods: getItemPrices() and purchaseItem(itemType: PurchaseType)
+1. Edit PurchaseType enum class. The enum value names must be exactly as defined in Google Play Console in app products names.
+2. Call init(activity: Activity, listener: PurchaseListener) from Activity.onCreate(..). Via PurchaseListener you will receive available products to purchase, a purchased items, a result from the recent purchase.
+3. Call onResume() from Activity.onResume()
+4. Call dispose() from Activity.onDestroy()
+5. IAP methods: getItemPrices() and purchaseItem(itemType: PurchaseType)
