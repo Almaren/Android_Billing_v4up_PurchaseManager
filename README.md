@@ -26,7 +26,7 @@ Android Billing v4+ implementation for non consumable products. Written in **Kot
   to the app build.gradle:
   ```
   dependencies {
-        implementation 'com.github.Almaren:Android_Billing_v4up_PurchaseManager:1.0.0'
+        implementation 'com.github.Almaren:Android_Billing_v4up_PurchaseManager:1.0.1'
   }
   ```
 
